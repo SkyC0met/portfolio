@@ -1,0 +1,85 @@
+// Import Bootstrap's SCSS variables and functions
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Override Bootstrap variables here
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  'grey': #bfc1c1
+);
+
+$white: #fefeff;
+$black: #000000;
+$grey: #bfc1c1;
+
+$headings-margin-bottom: $spacer * 0;
+$paragraph-margin-bottom: $spacer * 0;
+
+// Import the rest of Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+*, body {
+  background-color: #38373a;
+}
+
+i {
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+h1, h2, h3, h4, h5, h6, p, hr {
+  color: $white;
+}
+
+.btn-grey {
+  border-radius: 0;
+  color: $white;
+  font-weight: bold;
+}
+
+//  NAVBAR
+nav .navbar-brand,
+nav .navbar-brand:hover,
+nav .navbar-brand:focus,
+nav .navbar-brand:active {
+  color: $white;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: $white;
+}
+
+.nav-small .nav-item:hover,
+.navbar-nav .nav-link:hover {
+  background-color: $white;
+  color: $black;
+}
+
+nav .navbar-toggler,
+nav .navbar-toggler:focus,
+nav .navbar-toggler-icon {
+  box-shadow: none;
+  background-color: $white;
+}
+
+//  ABOUT ME
+.profile-pic {
+  width: 40%;
+}
+
+#certs {
+  height: 2000px;
+}

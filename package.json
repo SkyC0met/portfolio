@@ -1,0 +1,20 @@
+{
+  "name": "profolio",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass static/scss/style.scss static/css/style.css",
+    "watch-css": "sass --watch static/scss/style.scss static/css/style.css",
+    "start": "live-server --watch=static/css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.83.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
