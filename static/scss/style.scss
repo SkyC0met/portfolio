@@ -69,6 +69,13 @@ nav .navbar-brand:active {
   color: $black;
 }
 
+.nav-small .nav-link:hover .github,
+.nav-small .nav-link:hover .fa-github,
+.nav-small .nav-link:hover .linkedin,
+.nav-small .nav-link:hover .fa-linkedin{
+  color: $black;
+}
+
 nav .navbar-toggler,
 nav .navbar-toggler:focus,
 nav .navbar-toggler-icon {
@@ -177,4 +184,10 @@ nav .navbar-toggler-icon {
 //  FOOTER
 .footer {
   background-color: #817e7e;
+}
+
+.fa-phone,
+.fa-envelope,
+.fa-location-dot {
+  cursor: default;
 }
