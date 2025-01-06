@@ -24,9 +24,9 @@ document.querySelector('.navbar-brand').addEventListener('click', function (e) {
 
 //OWL CAROUSEL
 $(document).ready(function () {
-  const owlCarousel = $(".owl-carousel");
-
-  owlCarousel.owlCarousel({
+  // Initialize the "Projects" carousel
+  const projsCarousel = $(".projs-carousel");
+  projsCarousel.owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
@@ -37,15 +37,38 @@ $(document).ready(function () {
     }
   });
 
-  $(".left-btn").click(function () {
-    owlCarousel.trigger('prev.owl.carousel');
+  // Control buttons for "Projects" carousel
+  $(".left-btn-projs").click(function () {
+    projsCarousel.trigger("prev.owl.carousel");
+  });
+  $(".right-btn-projs").click(function () {
+    projsCarousel.trigger("next.owl.carousel");
   });
 
-  $(".right-btn").click(function () {
-    owlCarousel.trigger('next.owl.carousel');
+  // Initialize the "Certs" carousel
+  const certsCarousel = $(".certs-carousel");
+  certsCarousel.owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      }
+    }
+  });
+
+  // Control buttons for "Certs" carousel
+  $(".left-btn-certs").click(function () {
+    certsCarousel.trigger("prev.owl.carousel");
+  });
+  $(".right-btn-certs").click(function () {
+    certsCarousel.trigger("next.owl.carousel");
   });
 });
 
+
+//SKILLS BTNS
 document.addEventListener('DOMContentLoaded', function () {
   function setupHoverForGroup(buttonGroupSelector) {
     const buttons = document.querySelectorAll(`${buttonGroupSelector} .btn-skills`);

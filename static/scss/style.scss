@@ -12,12 +12,12 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
-  'grey': #bfc1c1
+  'grey': #8891a4
 );
 
 $white: #fefeff;
 $black: #000000;
-$grey: #bfc1c1;
+$grey: #8891a4;
 
 $headings-margin-bottom: $spacer * 0;
 $paragraph-margin-bottom: $spacer * 0;
@@ -25,7 +25,7 @@ $paragraph-margin-bottom: $spacer * 0;
 // Import the rest of Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-*, body {
+body {
   background-color: #38373a;
 }
 
@@ -47,30 +47,6 @@ h1, h2, h3, h4, h5, h6, p, hr {
   border-radius: 0;
   color: $white;
   font-weight: bold;
-}
-
-.btn-skills {
-  color: $white;
-  background-color: $grey;
-  font-weight: bold;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
-}
-
-.btn-skills:hover {
-  border: 10px solid black;
-}
-
-.hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
 
 //  NAVBAR
@@ -100,13 +76,62 @@ nav .navbar-toggler-icon {
   background-color: $white;
 }
 
-//  ABOUT ME
+//  START
 .profile-pic {
   width: 40%;
 }
 
+@media only screen and (max-width: 767px) {
+  .profile-pic {
+    width: 100%;
+  }
+}
+
+//  SKILLS
+.btn-skills {
+  color: $white;
+  background-color: $grey;
+  font-weight: bold;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.btn-skills:hover {
+  border: 10px solid #99a0a8;
+}
+
+@media only screen and (max-width: 339px) {
+  .btn-skills {
+    width: 130px;
+    height: 130px;
+  }
+
+  .btn-skills:hover {
+    border: 5px solid #99a0a8;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+//  PROJECTS
 .owl-carousel {
   width: 80% !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .owl-carousel {
+    width: 100% !important;
+  }
 }
 
 .project-container {
@@ -141,4 +166,15 @@ nav .navbar-toggler-icon {
 
 .project-container:hover .project-pics {
   opacity: 0.6;
+}
+
+//  CERTS
+.cert-pics {
+  max-height: 700px;
+  object-fit: contain;
+}
+
+//  FOOTER
+.footer {
+  background-color: #817e7e;
 }

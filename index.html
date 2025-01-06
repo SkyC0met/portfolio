@@ -70,7 +70,7 @@
   <!--NAVBAR-->
   <nav class="navbar navbar-expand-md fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Nichole Sim</a>
+      <a class="navbar-brand font-monospace" href="#">Nichole Sim</a>
       <button 
         class="navbar-toggler" 
         type="button" 
@@ -87,7 +87,7 @@
         id="navbarSupportedContent"
       >
         <!--NOT DROPDOWN BIG SCREEN-->
-        <div class="mx-5 d-md-flex d-none align-items-center justify-content-between">
+        <div class="mx-lg-5 mx-1 d-md-flex d-none align-items-center justify-content-between">
           <ul class="navbar-nav">
             <li class="nav-item mx-3">
               <a class="nav-link active" aria-current="page" href="#aboutMe">About Me</a>
@@ -99,7 +99,7 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#certs">Certs</a>
+              <a class="nav-link" href="#certs">Certificates</a>
             </li>
           </ul>
         </div>
@@ -124,7 +124,7 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#certs">Certs</a>
+              <a class="nav-link" href="#certs">Certificates</a>
             </li>
             <li class="nav-item">
               <a
@@ -155,13 +155,13 @@
   <!--NAVBAR-->
 
   <!--START-->
-  <div class="container m-5 p-5 d-md-flex">
-    <div class="my-auto mx-5">
+  <div class="container my-5 mx-auto p-5 d-md-flex text-center">
+    <div class="my-auto mx-md-5">
       <h1>Hey! I am Nichole Sim</h1>
       <hr class="me-3">
       <h4>Y2 Cybersecurity & Digital Forensics student at Nanyang Polytechnic</h4>
     </div>
-    <img class="profile-pic" src="static/images/Happy.JPG" alt="">
+    <img class="profile-pic mt-md-0 mt-3" src="static/images/Happy.JPG" alt="">
   </div>
   <!--START-->
 
@@ -231,12 +231,12 @@
 
   <!--PROJECTS-->
   <div id="projects" class="container mt-5 mx-auto">
-    <h2 class="my-5 font-monospace">My projects</h2>
+    <h2 class="my-3 font-monospace">Projects</h2>
     <div class="d-flex justify-content-center align-items-center">
-      <div class="left-btn me-3">
+      <div class="left-btn-projs me-3 d-md-block d-none">
         <i class="fa-solid fa-arrow-left fa-2xl"></i>
       </div>
-      <div class="owl-carousel owl-theme">
+      <div class="owl-carousel owl-theme projs-carousel">
         <!-- Project 1 -->
         <div class="project-container item">
           <img class="project-pics" src="static/images/lockbox.png" alt="">
@@ -264,7 +264,7 @@
           </div>
         </div>
       </div>
-      <div class="right-btn ms-3">
+      <div class="right-btn-projs ms-3 d-md-block d-none">
         <i class="fa-solid fa-arrow-right fa-2xl"></i>
       </div>
     </div>
@@ -272,11 +272,68 @@
   <!--PROJECTS-->
 
   <!--CERTS-->
-  <div style="height: 2000px;" id="certs" class="container mt-5 mx-auto">
-    <h6>ABOUT ME</h6>
-    <h4>I am A</h4>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium voluptates in molestias aliquam expedita pariatur illum saepe quidem esse, sit optio facilis. Eos illum saepe, consequatur rerum quos consequuntur!</p>
+  <div id="certs" class="container mt-5 mx-auto">
+    <h2 class="my-3 font-monospace">Certificates</h2>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="left-btn-certs me-3 d-md-block d-none">
+        <i class="fa-solid fa-arrow-left fa-2xl"></i>
+      </div>
+      <div class="owl-carousel owl-theme certs-carousel">
+        <div class="item">
+          <img class="cert-pics" src="static/certs/hackbash.png" alt="">
+        </div>
+
+        <div class="item">
+          <img class="cert-pics" src="static/certs/aisp.png" alt="">
+        </div>
+
+        <div class="item">
+          <img class="cert-pics" src="static/certs/BrainHack2024.png" alt="">
+        </div>
+  
+        <div class="item">
+          <img class="cert-pics" src="static/certs/qisp.png" alt="">
+        </div>
+
+        <div class="item">
+          <img class="cert-pics" src="static/certs/ycep.png" alt="">
+        </div>
+
+        <div class="item">
+          <img class="cert-pics" src="static/certs/ybn.png" alt="">
+        </div>
+      </div>
+      <div class="right-btn-certs ms-3 d-md-block d-none">
+        <i class="fa-solid fa-arrow-right fa-2xl"></i>
+      </div>
+    </div>
   </div>
   <!--CERTS-->
+
+  <!--FOOTER-->
+  <div class="container-fluid mt-5 mx-auto p-5 footer">
+    <h2 class="my-3">Get in touch</h2>
+
+    <div class="d-flex align-items-center my-3">
+      <i class="fa-solid fa-phone fa-xl"></i>
+      <p class="font-monospace mx-3">(+65) 8789 1217</p>
+    </div>
+
+    <div class="d-flex align-items-center my-3">
+      <i class="fa-solid fa-envelope fa-xl"></i>
+      <p class="font-monospace mx-3">230508u@mymail.nyp.edu.sg</p>
+    </div>
+
+    <div class="d-flex align-items-center my-3">
+      <i class="fa-solid fa-location-dot fa-xl"></i>
+      <p class="font-monospace mx-3">Singapore</p>
+    </div>
+
+    <div class="d-flex align-items-center my-3">
+      <a href="https://github.com/SkyC0met" target="_blank"><i class="fa-brands fa-github fa-xl mx-3"></i></a>
+    <a href="https://sg.linkedin.com/in/nichole-sim-147371242" target="_blank"><i class="fa-brands fa-linkedin fa-xl mx-3"></i></a>
+    </div>
+  </div>
+  <!--FOOTER-->
 </body>
 </html>
