@@ -31,6 +31,7 @@ $paragraph-margin-bottom: $spacer * 0;
 
 i {
   color: $white;
+  cursor: pointer;
 }
 
 a {
@@ -46,6 +47,30 @@ h1, h2, h3, h4, h5, h6, p, hr {
   border-radius: 0;
   color: $white;
   font-weight: bold;
+}
+
+.btn-skills {
+  color: $white;
+  background-color: $grey;
+  font-weight: bold;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.btn-skills:hover {
+  border: 10px solid black;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 //  NAVBAR
@@ -80,6 +105,40 @@ nav .navbar-toggler-icon {
   width: 40%;
 }
 
-#certs {
-  height: 2000px;
+.owl-carousel {
+  width: 80% !important;
+}
+
+.project-container {
+  position: relative;
+  display: inline-block;
+}
+
+.project-pics {
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.project-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-container:hover .project-description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project-container:hover .project-pics {
+  opacity: 0.6;
 }
