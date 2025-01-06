@@ -5,7 +5,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetId = this.getAttribute('href').substring(1);
     const targetElement = document.getElementById(targetId);
 
-    //OFFSET SCROLL WITH NAVBAR HEIGHT
+    //  OFFSET SCROLL WITH NAVBAR HEIGHT
     window.scrollTo({
       top: targetElement.offsetTop - 80,
       behavior: 'smooth'
@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-//NAVBAR BRAND SCROLL BACK TO TOP
+//  NAVBAR BRAND SCROLL BACK TO TOP
 document.querySelector('.navbar-brand').addEventListener('click', function (e) {
   e.preventDefault();
   window.scrollTo({
@@ -22,9 +22,9 @@ document.querySelector('.navbar-brand').addEventListener('click', function (e) {
   });
 });
 
-//OWL CAROUSEL
+//  OWL CAROUSEL
 $(document).ready(function () {
-  // Initialize the "Projects" carousel
+  //  PROJ CAROU
   const projsCarousel = $(".projs-carousel");
   projsCarousel.owlCarousel({
     loop: true,
@@ -37,7 +37,6 @@ $(document).ready(function () {
     }
   });
 
-  // Control buttons for "Projects" carousel
   $(".left-btn-projs").click(function () {
     projsCarousel.trigger("prev.owl.carousel");
   });
@@ -45,7 +44,7 @@ $(document).ready(function () {
     projsCarousel.trigger("next.owl.carousel");
   });
 
-  // Initialize the "Certs" carousel
+  //  CERTS CAROU
   const certsCarousel = $(".certs-carousel");
   certsCarousel.owlCarousel({
     loop: true,
@@ -58,7 +57,6 @@ $(document).ready(function () {
     }
   });
 
-  // Control buttons for "Certs" carousel
   $(".left-btn-certs").click(function () {
     certsCarousel.trigger("prev.owl.carousel");
   });
