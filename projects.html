@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!--CSS-->
+  <link 
+    rel="stylesheet" 
+    href="static/css/style.css"
+  >
+  <!--CSS-->
+
+  <!--OWL CSS-->
+  <link 
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+  />
+  <!--OWL CSS-->
+
+  <!--BOOTSTRAP JS-->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+    crossorigin="anonymous"
+  ></script>
+  <!--BOOTSTRAP JS-->
+
+  <!--BOOTSTRAP POPPER-->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"
+  ></script>
+  <!--BOOTSTRAP POPPER-->
+
+  <!--JQUERY-->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    defer
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+  ></script>
+  <!--JQUERY-->
+
+  <!--OWL JS-->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    defer
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+  ></script>
+  <!--OWL JS-->
+
+  <!--JS-->
+  <script src="static/js/script.js" defer></script>
+  <!--JS-->
+
+  <!--FONT AWESOME ICONS-->
+  <script
+    src="https://kit.fontawesome.com/c42ec0d4e5.js"
+    defer
+    crossorigin="anonymous"
+  ></script>
+  <!--FONT AWESOME ICONS-->
+</head>
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-md fixed-top bg-grey">
+    <div class="container-fluid">
+      <a class="navbar-brand font-monospace" href="#">Nichole Sim</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarSupportedContent"
+      >
+        <!--NOT DROPDOWN BIG SCREEN-->
+        <div class="mx-lg-5 mx-1 d-md-flex d-none align-items-center justify-content-between">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#lockbox">LockBox</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#earthecho">EarthEcho</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#pawithluv">PAWithLuv</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="d-md-flex d-none align-items-center">
+          <a href="https://github.com/SkyC0met" target="_blank"><i class="fa-brands fa-github fa-xl mx-3"></i></a>
+          <a href="https://sg.linkedin.com/in/nichole-sim-147371242" target="_blank"><i class="fa-brands fa-linkedin fa-xl mx-3"></i></a>
+          <button class="btn btn-grey mx-3">Resume</button>
+        </div>
+        <!--NOT DROPDOWN BIG SCREEN-->
+
+        <!--DROPDOWN SMALL SCREEN-->
+        <div class="d-md-none my-3 nav-small">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#aboutMe">About Me</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#lockbox">LockBox</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#earthecho">EarthEcho</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#pawithluv">PAWithLuv</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://github.com/SkyC0met"
+                class="nav-link d-flex align-items-center"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github fa-xl mx-3"></i>
+                <p class="github">GitHub</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://sg.linkedin.com/in/nichole-sim-147371242"
+                class="nav-link d-flex align-items-center"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin fa-xl mx-3"></i>
+                <p class="linkedin">LinkedIn</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--DROPDOWN SMALL SCREEN-->
+      </div>
+    </div>
+  </nav>
+  <!--NAVBAR-->
+
+  <div class="container mt-5 mx-auto p-5 text-center">
+    <h1>Various projects I have worked on</h1>
+    <p class="my-3 font-monospace">Hover over the pictures or tap on them to read a brief description</p>
+  </div>
+
+  <!--LOCKBOX-->
+  <div id="lockbox" class="container mt-5 mx-auto">
+    <div>
+      <h2 class="my-3 font-monospace">LockBox</h2>
+      <p>A user-friendly desktop application designed to enhance the protection of sensitive data, making digital security accessible to all.</p>
+      <p>It contains 10 tools, all geared towards various data security protection</p>
+      <hr>
+      <h6>Created using:</h6>
+      <ul>
+        <li>Python</li>
+        <li>PyQt5</li>
+        <li>SQLite</li>
+      </ul>
+      <hr>
+      <h6>I worked on 3 tools:</h6>
+      <ul>
+        <li>Metadata Deletion: Erases hidden metadata from files to prevent unauthorized use, distribution, modification.</li>
+        <li>Secure Notes: Automatically erases notes after a set time to prevent unauthorized access and ensure information privacy.</li>
+        <li>Secure Messaging: A secure two-person chat app where messages vanish once either user closes the app, with both entering a shared code to begin a private conversation.</li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="left-btn-lockbox me-3 d-md-block d-none">
+        <i class="fa-solid fa-arrow-left fa-2xl"></i>
+      </div>
+      <div class="owl-carousel owl-theme lockbox-carousel">
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/lockbox/base.png" alt="">
+          <div class="project-description">
+            <h4>Home</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/lockbox/meta-data1.png" alt="">
+          <div class="project-description">
+            <h4>Tool starting</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/lockbox/notes5.png" alt="">
+          <div class="project-description">
+            <h4>Setting a timer for secure notes</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/lockbox/message3.png" alt="">
+          <div class="project-description">
+            <h4>Connecting to another user for secure messaging</h4>
+          </div>
+        </div>
+      </div>
+      <div class="right-btn-lockbox ms-3 d-md-block d-none">
+        <i class="fa-solid fa-arrow-right fa-2xl"></i>
+      </div>
+    </div>
+  </div>
+  <!--LOCKBOX-->
+
+  <!--EARTHECHO-->
+  <div id="earthecho" class="container mt-5 mx-auto">
+    <div>
+      <h2 class="my-3 font-monospace">EarthEcho</h2>
+      <p>A blogging platform where users can share tips and insights on sustainable living, fostering a community of like-minded individuals.</p>
+      <p>Users are able to create accounts, login and interact with the community to earn points and get discounts on sustainable shopping.</p>
+      <hr>
+      <h6>Created using:</h6>
+      <ul>
+        <li>Python</li>
+        <li>Flask</li>
+        <li>MySQL</li>
+        <li>HTML, CSS, JS, Bootstrap</li>
+      </ul>
+      <hr>
+      <h6>I worked on:</h6>
+      <ul>
+        <li>Authentication & Authorization: User and admin signup, login, admin user management</li>
+        <li>Minigame: A small game made in godot for users to earn points</li>
+        <li>Points Shop & Vouchers: Incentives for users to stay on the platform to earn discounts</li>
+        <li>Others: Messaging, Favourites</li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="left-btn-earthecho me-3 d-md-block d-none">
+        <i class="fa-solid fa-arrow-left fa-2xl"></i>
+      </div>
+      <div class="owl-carousel owl-theme earthecho-carousel">
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/earthecho/homepage.png" alt="">
+          <div class="project-description">
+            <h4>Home</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/earthecho/signup.png" alt="">
+          <div class="project-description">
+            <h4>Signup</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/earthecho/user_login.png" alt="">
+          <div class="project-description">
+            <h4>User login</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/earthecho/profile.png" alt="">
+          <div class="project-description">
+            <h4>User profile</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/earthecho/game.png" alt="">
+          <div class="project-description">
+            <h4>Minigame for users to earn points</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/earthecho/points_shop.png" alt="">
+          <div class="project-description">
+            <h4>Points shop where users can use their points to buy vouchers</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/earthecho/voucher.png" alt="">
+          <div class="project-description">
+            <h4>Users can then spend their vouchers at accepted shops</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/earthecho/admin_login.png" alt="">
+          <div class="project-description">
+            <h4>Admin login</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/earthecho/user_management.png" alt="">
+          <div class="project-description">
+            <h4>User management for admin</h4>
+          </div>
+        </div>
+      </div>
+      <div class="right-btn-earthecho ms-3 d-md-block d-none">
+        <i class="fa-solid fa-arrow-right fa-2xl"></i>
+      </div>
+    </div>
+  </div>
+  <!--EARTHECHO-->
+
+  <!--PAWITHLUV-->
+  <div id="pawithluv" class="container mt-5 mx-auto">
+    <div>
+      <h2 class="my-3 font-monospace">PAWithLuv</h2>
+      <p>A fundraiser website enabling users to preorder pet treats, with all proceeds donated to the President's Challenge 2024.</p>
+      <p>A short 1 day project to help out a great cause.</p>
+      <hr>
+      <h6>Created using:</h6>
+      <ul>
+        <li>HTML, CSS, JS, Bootstrap</li>
+      </ul>
+      <h6>Hosted on Firebase</h6>
+      <hr>
+      <h6>I worked on:</h6>
+      <ul>
+        <li>The full web app, including the UI and UX design.</li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="left-btn-pawithluv me-3 d-md-block d-none">
+        <i class="fa-solid fa-arrow-left fa-2xl"></i>
+      </div>
+      <div class="owl-carousel owl-theme pawithluv-carousel">
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/pawithluv/paw1.png" alt="">
+          <div class="project-description">
+            <h4>Home</h4>
+          </div>
+        </div>
+
+        <div class="project-container item">
+          <img class="project-pics" src="static/images/pawithluv/paw2.png" alt="">
+          <div class="project-description">
+            <h4>Storage instructions</h4>
+          </div>
+        </div>
+      </div>
+      <div class="right-btn-pawithluv ms-3 d-md-block d-none">
+        <i class="fa-solid fa-arrow-right fa-2xl"></i>
+      </div>
+    </div>
+  </div>
+  <!--PAWITHLUV-->
+
+  <!--FOOTER-->
+  <div class="container-fluid mt-5 mx-auto p-5 footer">
+    <h2 class="my-3">Get in touch</h2>
+
+    <div class="d-flex align-items-center my-3">
+      <i class="fa-solid fa-phone fa-xl"></i>
+      <p class="font-monospace mx-3">(+65) 8789 1217</p>
+    </div>
+
+    <div class="d-flex align-items-center my-3">
+      <i class="fa-solid fa-envelope fa-xl"></i>
+      <p class="font-monospace mx-3">230508u@mymail.nyp.edu.sg</p>
+    </div>
+
+    <div class="d-flex align-items-center my-3">
+      <i class="fa-solid fa-location-dot fa-xl"></i>
+      <p class="font-monospace mx-3">Singapore</p>
+    </div>
+
+    <div class="d-flex align-items-center my-3">
+      <a href="https://github.com/SkyC0met" target="_blank"><i class="fa-brands fa-github fa-xl mx-3"></i></a>
+    <a href="https://sg.linkedin.com/in/nichole-sim-147371242" target="_blank"><i class="fa-brands fa-linkedin fa-xl mx-3"></i></a>
+    </div>
+  </div>
+  <!--FOOTER-->
+</body>
+</html>

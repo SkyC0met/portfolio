@@ -11956,6 +11956,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, hr {
   color: #fefeff;
 }
 
+ul, li {
+  color: #fefeff;
+}
+
 .btn-grey {
   border-radius: 0;
   color: #fefeff;
@@ -12093,6 +12097,10 @@ nav .navbar-toggler-icon {
 .fa-envelope,
 .fa-location-dot {
   cursor: default;
+}
+
+#lockbox h6, #lockbox .h6, #lockbox p, #lockbox li, #earthecho h6, #earthecho .h6, #earthecho p, #earthecho li, #pawithluv h6, #pawithluv .h6, #pawithluv p, #pawithluv li {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

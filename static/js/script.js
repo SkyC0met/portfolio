@@ -63,6 +63,66 @@ $(document).ready(function () {
   $(".right-btn-certs").click(function () {
     certsCarousel.trigger("next.owl.carousel");
   });
+
+  //  LOCKBOX CAROU
+  const lockboxCarousel = $(".lockbox-carousel");
+  lockboxCarousel.owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      }
+    }
+  });
+
+  $(".left-btn-lockbox").click(function () {
+    lockboxCarousel.trigger("prev.owl.carousel");
+  });
+  $(".right-btn-lockbox").click(function () {
+    lockboxCarousel.trigger("next.owl.carousel");
+  });
+
+  //  EARTHECHO CAROU
+  const earthechoCarousel = $(".earthecho-carousel");
+  earthechoCarousel.owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      }
+    }
+  });
+
+  $(".left-btn-earthecho").click(function () {
+    earthechoCarousel.trigger("prev.owl.carousel");
+  });
+  $(".right-btn-earthecho").click(function () {
+    earthechoCarousel.trigger("next.owl.carousel");
+  });
+
+  //  PAWITHLUV CAROU
+  const pawithluvCarousel = $(".pawithluv-carousel");
+  pawithluvCarousel.owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      }
+    }
+  });
+
+  $(".left-btn-pawithluv").click(function () {
+    pawithluvCarousel.trigger("prev.owl.carousel");
+  });
+  $(".right-btn-pawithluv").click(function () {
+    pawithluvCarousel.trigger("next.owl.carousel");
+  });
 });
 
 

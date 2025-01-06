@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, h6, p, hr {
   color: $white;
 }
 
+ul, li {
+  color: $white;
+}
+
 .btn-grey {
   border-radius: 0;
   color: $white;
@@ -190,4 +194,11 @@ nav .navbar-toggler-icon {
 .fa-envelope,
 .fa-location-dot {
   cursor: default;
+}
+
+//  PROJECTS PAGE
+#lockbox, #earthecho, #pawithluv {
+  h6, p, li {
+    margin-bottom: 10px;
+  }
 }
