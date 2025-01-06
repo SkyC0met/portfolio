@@ -12,12 +12,14 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
-  'grey': #8891a4
+  'grey': #8891a4,
+  'light-grey': #99a0a8
 );
 
 $white: #fefeff;
 $black: #000000;
 $grey: #8891a4;
+$light-grey: #99a0a8;
 
 $headings-margin-bottom: $spacer * 0;
 $paragraph-margin-bottom: $spacer * 0;
@@ -76,7 +78,9 @@ nav .navbar-brand:active {
 .nav-small .nav-link:hover .github,
 .nav-small .nav-link:hover .fa-github,
 .nav-small .nav-link:hover .linkedin,
-.nav-small .nav-link:hover .fa-linkedin{
+.nav-small .nav-link:hover .fa-linkedin,
+.nav-small .nav-link:hover .resume,
+.nav-small .nav-link:hover .fa-file{
   color: $black;
 }
 
